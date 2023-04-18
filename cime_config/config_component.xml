@@ -15,6 +15,16 @@
     <desc>Name of wave component</desc>
   </entry>
 
+    <entry id="WAV_MOD_DEF">
+    <type>char</type>
+    <default_value>DEFAULT</default_value>
+    <group>case_comp</group>
+    <file>env_run.xml</file>
+    <desc> This variable is used to set the absolute WW3 mod_def file directory. if set to 'DEFAULT',
+           the out-of-the-box mod_def file will be used.
+    </desc>
+  </entry>
+
   <help>
     =========================================
     WW naming conventions
