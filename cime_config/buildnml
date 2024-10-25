@@ -216,9 +216,10 @@ def _prestage_inputs(case):
         run_cmd("ww3_grid", from_dir=output_dir)
 
         # Move mod_def.ww3 to $RUNDIR
-        
-        shutil.move(os.path.join(output_dir,"mod_def.ww3"), os.path.join(rundir, "mod_def.ww3"))
-
+        if os.path.isfile(os.path.join(output_dir,"mod_def.ww3")):
+            shutil.move(os.path.join(output_dir,"mod_def.ww3"), os.path.join(rundir, "mod_def.ww3"))
+        else:
+            logger.warning("File mod_def.ww3 not found, action defered until after build.")
     else:
         # Use mod_def already created 
         mod_def_in = case.get_value("WW3_MODDEF")
