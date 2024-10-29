@@ -75,7 +75,6 @@ def buildlib(bldroot, libroot, case, compname=None):
     s,o,e = run_cmd("make install VERBOSE=1 DESTDIR={}".format(destdir), from_dir=bldroot, verbose=True)
     expect(not s,"ERROR from make output={}, error={}".format(o,e))
 
-    
 def _main_func(args):
     caseroot, libroot, bldroot = parse_input(args)
     with Case(caseroot) as case:
