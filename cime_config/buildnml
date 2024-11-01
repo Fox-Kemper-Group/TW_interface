@@ -197,7 +197,7 @@ def _prestage_inputs(case):
         ww3_moddef_dir = os.path.join(rundir, "ww3_moddef_create")
         if not os.path.exists(ww3_moddef_dir):
             os.makedirs(ww3_moddef_dir)
-        if not os.path.exists(os.path.join(ww3_moddef_dir,filename):
+        if not os.path.exists(os.path.join(ww3_moddef_dir,filename)):
             safe_copy(item, ww3_moddef_dir)
 
     if case.get_value("WW3_MODDEF") == 'unset':
