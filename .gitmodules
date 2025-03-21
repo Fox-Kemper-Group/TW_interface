@@ -1,7 +1,7 @@
 [submodule "WW3"]
 path = WW3
-url = https://github.com/ESCOMP/WW3.git
-fxtag = dev/unified_0.0.13
+url = git@github.com:Fox-Kemper-Group/TW.git
+fxtag = dev/cesm3
 fxrequired = AlwaysRequired
-fxDONOTUSEurl = https://github.com/ESCOMP/WW3.git
+fxDONOTUSEurl = git@github.com:Fox-Kemper-Group/TW.git
 
